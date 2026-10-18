@@ -2,6 +2,11 @@
 name = "ledger_me_sdk_macros"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ecdesa-labs/ledger-me-sdk"
+description = "Proc macros for ledger_me_sdk (#[host_fn]) and ledger_me_sdk_guest (#[call], #[import])."
+keywords = ["blockchain", "wasm", "macros"]
+categories = ["development-tools::procedural-macro-helpers"]
 
 [lib]
 proc-macro = true

@@ -68,7 +68,7 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-ledger_me_sdk_guest = { git = "https://github.com/ecdesa-labs/ledger-me-sdk" }
+ledger_me_sdk_guest = "0.1"
 borsh = { version = "1", default-features = false, features = ["derive"] }
 
 [profile.release]
@@ -128,7 +128,7 @@ cargo build --release --target wasm32-unknown-unknown
 
 ```toml
 [dependencies]
-ledger_me_sdk = { git = "https://github.com/ecdesa-labs/ledger-me-sdk" }
+ledger_me_sdk = "0.1"
 actix-rt = "2"
 anyhow = "1"
 borsh = { version = "1", features = ["derive"] }
@@ -259,3 +259,8 @@ Details in the [ROADMAP](ROADMAP.md).
 - 📁 [adrs/](adrs/)
   - [0001 - CallExecution with one instance per execution](<adrs/0001 [en] - CallExecution with one instance per execution.md>)
   - [0002 - SDK-owned Engine with fuel and memory limits](<adrs/0002 [en] - SDK-owned Engine with fuel and memory limits.md>)
+
+## License
+
+Licensed under either of [Apache License, Version 2.0](LICENSE-APACHE) or
+[MIT license](LICENSE-MIT), at your option.

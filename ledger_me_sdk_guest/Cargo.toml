@@ -4,8 +4,16 @@
 name = "ledger_me_sdk_guest"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ecdesa-labs/ledger-me-sdk"
+description = "no_std runtime support for ledger_me_sdk pallets compiled to WASM: panic handler, allocator, input/output plumbing."
+keywords = ["blockchain", "wasm", "no-std", "pallet"]
+categories = ["no-std", "wasm", "cryptography::cryptocurrencies"]
+
+[package.metadata.docs.rs]
+targets = ["wasm32-unknown-unknown"]
 
 [dependencies]
 borsh = { version = "1", default-features = false, features = ["derive"] }
-ledger_me_sdk_macros = { path = "../ledger_me_sdk_macros" }
+ledger_me_sdk_macros = { path = "../ledger_me_sdk_macros", version = "0.1.0" }
 talc = "5.1.1"
