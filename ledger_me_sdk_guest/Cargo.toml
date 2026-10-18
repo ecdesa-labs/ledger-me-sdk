@@ -1,0 +1,11 @@
+[workspace]
+
+[package]
+name = "ledger_me_sdk_guest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+borsh = { version = "1", default-features = false, features = ["derive"] }
+ledger_me_sdk_macros = { path = "../ledger_me_sdk_macros" }
+talc = "5.1.1"

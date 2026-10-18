@@ -1,0 +1,29 @@
+[package]
+name = "ledger_me_sdk"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = [
+    "ledger_me_sdk_macros",
+    "examples/runtime_example",
+]
+
+[dependencies]
+anyhow = "1.0.104"
+thiserror = "2.0.20"
+bytes = "1.12.1"
+actix = "0.13.5"
+actix-rt = "2.15.0"
+sha2 = "0.11.0"
+rusqlite = "0.40.2"
+eth_trie = "0.6.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+wasmtime = "48.0.2"
+ledger_me_sdk_macros = { path = "ledger_me_sdk_macros" }
+tracing = "0.1"
+
+[dev-dependencies]
+tracing-subscriber = "0.3"
+
